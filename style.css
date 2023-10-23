@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    padding: 1.3rem 0 0 0;
+    background: linear-gradient(to top, rgb(107, 106, 106), rgb(138, 137, 137), rgb(201, 200, 200), white);
+    height: 100%;
+    width: 100%;
+}
+
+.con {
+    
+    margin: 0 0 0 10rem;
+    display: grid;
+    grid-template-columns: 20rem 20rem 20rem;
+    grid-template-rows: 20rem 20rem 20rem;
+}
+
+.box {
+    background: linear-gradient(to bottom, rgb(167, 165, 165), rgb(211, 210, 210)), rgb(226, 225, 225);
+    border: 0.2rem solid black;
+}
+
+.box:hover {
+    background: linear-gradient(to top, rgb(92, 92, 92), gray);
+
+}
+
+
+
+#reset {
+    font-weight: bolder;
+    height: 5rem;
+    width: 14rem;
+    font-size: 3rem;
+    position: absolute;
+    right: 30rem;
+    top: 44rem;
+    
+    background: linear-gradient(to top,purple,rgb(189, 63, 189),rgb(211, 128, 211));
+}
+
+#reset:active{
+    background:linear-gradient(to left,purple,rgb(189, 63, 189),rgb(211, 128, 211));
+}
+#turn1 {
+    height: 10rem;
+    border: 0.2rem solid black;
+    border-radius: 50%;
+    width: 10rem;
+    position: absolute;
+    right: 19rem;
+    bottom: 7rem;
+    background: linear-gradient(to bottom, blue, rgb(90, 90, 250), rgb(160, 160, 253));
+}
+#turn1:hover{
+    background: linear-gradient(to top, blue, rgb(90, 90, 250), rgb(160, 160, 253));
+}
+#turn2 {
+    height: 10rem;
+    border: 0.2rem solid black;
+    border-radius: 50%;
+    width: 10rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 7rem;
+    background: linear-gradient(to bottom, orange,yellow, rgb(253, 253, 96), rgb(252, 252, 156));
+}
+#turn2:hover{
+    background: linear-gradient(to top, yellow, rgb(253, 253, 96), rgb(252, 252, 156));
+}
+#score{
+    font-weight: bolder;
+    padding: 0.7rem 0 0 0;
+    font-size: 3rem;
+    position: absolute;
+    top: 14rem;
+    left: 76rem;
+    background-color: transparent;
+    height: 5rem;
+    width: 45rem;
+}
+#yellow{
+    position: relative;
+    font-size: 3.5rem;
+    left: 24rem;
+}
+
+#blue{
+    position: relative;
+    font-size: 3.5rem;
+    left: 2.5rem;
+}
+
+#clearScore{
+    
+    position: absolute;
+    background: linear-gradient(to top,purple,rgb(189, 63, 189),rgb(211, 128, 211));
+    font-weight: bolder;
+    height: 5rem;
+    width: 19rem;
+    font-size: 3rem;
+    right: 8rem;
+    top: 44rem;
+    
+}
+#clearScore:active{
+    background:linear-gradient(to bottom,purple,rgb(189, 63, 189),rgb(211, 128, 211));
+}
+
+#winName{
+    visibility: hidden;
+    position: absolute;
+    left: 10rem;
+    top: 2rem; 
+    background:transparent;
+    height: 61rem;
+    width: 60rem;
+}
+
+#win1{
+    visibility: hidden;
+    position: relative;
+    left: 14rem;
+    top: 6rem;
+    text-shadow: 0.2rem 0.3rem 0.1rem  red;
+    color: yellow;
+}
+#win2{
+    visibility: hidden;
+    position: relative;
+    right: 10rem;
+    top: 6rem;
+    text-shadow: 0.2rem 0.3rem 0.1rem  cyan;
+    color: blue;
+}
+#match-draw{
+    visibility: hidden;
+    position: relative;
+    color: red;
+    text-shadow: 0.3rem 0.2rem 0.4rem gray;
+    bottom: 8rem;
+    right: 3rem;
+}
+
+/* @media only screen and (max-width: 640px){
+    html{
+        font-size: 20%;
+    }
+} */
